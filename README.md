@@ -1,6 +1,6 @@
 # RTCDProject
 
-A project on Real Time Collision Detection, which builds on the App I created in University, spawning from the following repository:
+A project on Real Time Collision Detection(RTCD), which builds on the App I created in University, spawning from the following repository:
 https://github.com/PC88/RTCD-App
 
 This project will aim to improve upon what was achieved in the limited time frame of a single trimester, 
