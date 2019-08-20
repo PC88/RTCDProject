@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{ACFA7F80-A323-4E54-A073-D021FE9576C2}</ProjectGuid>
+    <RootNamespace>RTCDProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>..\Dev\glm;..\Dev\GLUT;..\Dev\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Dev\GLUT\GL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>..\Dev\glm;..\Dev\GLUT;..\Dev\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Dev\GLUT\GL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>..\Dev\glm;..\Dev\GLUT;..\Dev\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Dev\GLUT\GL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>..\Dev\glm;..\Dev\GLUT;..\Dev\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Dev\GLUT\GL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>src/App/LogSystem;src/Shapes;src/PhysicsComp;src/GraphicsComp;src/App;$(SolutionDir)/src/Shapes;$(SolutionDir)Src\Dependencies\glut\include;src/App/QuadTree</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>src/App/LogSystem;src/Shapes;src/PhysicsComp;src/GraphicsComp;src/App;$(SolutionDir)/src/Shapes;$(SolutionDir)Src\Dependencies\glut\include;src/App/QuadTree</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>src/App/LogSystem;src/Shapes;src/PhysicsComp;src/GraphicsComp;src/App;$(SolutionDir)/src/Shapes;$(SolutionDir)Src\Dependencies\glut\include;src/App/QuadTree</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>src/App/LogSystem;src/Shapes;src/PhysicsComp;src/GraphicsComp;src/App;$(SolutionDir)/src/Shapes;$(SolutionDir)Src\Dependencies\glut\include;src/App/QuadTree</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\App\LogSystem\Logger.h" />
+    <ClInclude Include="Src\Shapes\Boundaries.h" />
+    <ClInclude Include="Src\App\EventSystem\EventManager.h" />
+    <ClInclude Include="Src\App\GameWindow.h" />
+    <ClInclude Include="Src\App\ObjectPool\ShapePool.h" />
+    <ClInclude Include="Src\App\QuadTree\QuadTree.h" />
+    <ClInclude Include="Src\App\SingletonGraphStates.h" />
+    <ClInclude Include="Src\GraphicsComp\CircleGraphComp.h" />
+    <ClInclude Include="Src\GraphicsComp\GraphicsComp.h" />
+    <ClInclude Include="Src\GraphicsComp\SquareGraphComp.h" />
+    <ClInclude Include="Src\GraphicsComp\TriangleGraphComp.h" />
+    <ClInclude Include="Src\PhysicsComp\CirclePhysicsComp.h" />
+    <ClInclude Include="Src\PhysicsComp\PhysicsComp.h" />
+    <ClInclude Include="Src\PhysicsComp\SquarePhysicsComp.h" />
+    <ClInclude Include="Src\PhysicsComp\TrianglePhysicsComp.h" />
+    <ClInclude Include="Src\Shapes\Circle.h" />
+    <ClInclude Include="Src\Shapes\Shape.h" />
+    <ClInclude Include="Src\Shapes\Square.h" />
+    <ClInclude Include="Src\Shapes\Transform.h" />
+    <ClInclude Include="Src\Shapes\Triangle.h" />
+    <ClInclude Include="Src\App\Timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\App\LogSystem\Logger.cpp" />
+    <ClCompile Include="Src\Shapes\Boundaries.cpp" />
+    <ClCompile Include="Src\App\EventSystem\EventManager.cpp" />
+    <ClCompile Include="Src\App\GameWindow.cpp" />
+    <ClCompile Include="Src\App\Main.cpp" />
+    <ClCompile Include="Src\App\ObjectPool\ShapePool.cpp" />
+    <ClCompile Include="Src\App\QuadTree\QuadTree.cpp" />
+    <ClCompile Include="Src\App\SingletonGraphStates.cpp" />
+    <ClCompile Include="Src\GraphicsComp\CircleGraphComp.cpp" />
+    <ClCompile Include="Src\GraphicsComp\GraphicsComp.cpp" />
+    <ClCompile Include="Src\GraphicsComp\SquareGraphComp.cpp" />
+    <ClCompile Include="Src\GraphicsComp\TriangleGraphComp.cpp" />
+    <ClCompile Include="Src\PhysicsComp\CirclePhysicsComp.cpp" />
+    <ClCompile Include="Src\PhysicsComp\PhysicsComp.cpp" />
+    <ClCompile Include="Src\PhysicsComp\SquarePhysicsComp.cpp" />
+    <ClCompile Include="Src\PhysicsComp\TrianglePhysicsComp.cpp" />
+    <ClCompile Include="Src\Shapes\Circle.cpp" />
+    <ClCompile Include="Src\Shapes\Shape.cpp" />
+    <ClCompile Include="Src\Shapes\Square.cpp" />
+    <ClCompile Include="Src\Shapes\Transform.cpp" />
+    <ClCompile Include="Src\Shapes\Triangle.cpp" />
+    <ClCompile Include="Src\App\Timer.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
